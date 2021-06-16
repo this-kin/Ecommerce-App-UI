@@ -19,8 +19,7 @@ This is Gadget E-commerce Application Built with FLUTTER SDK
 
 ## 🎞 Demo 
 
-<img src="ss/ss1.png" width="400">
-
+![alt text](https://github.com/FlutterBoyfriend/Ecommerce-App/blob/main/20210617003954.mp4) 
 
 ## 🤝 Author
 
