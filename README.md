@@ -3,7 +3,7 @@ E-commerce App built with Flutter
 This is Gadget E-commerce Application Built with FLUTTER SDK
 
 <br>
-## 💻 Requirements
+💻 Requirements
 
 - Any Operating System (ie. MacOS X, Linux, Windows)
 - Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
