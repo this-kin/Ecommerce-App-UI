@@ -1,6 +1,6 @@
-Weather App built with Flutter 
+E-commerce App built with Flutter 
 
-This is a Weather Forecast Application Built with FLUTTER SDK
+This is Gadget E-commerce Application Built with FLUTTER SDK
 
 <br>
 ## 💻 Requirements
@@ -12,17 +12,17 @@ This is a Weather Forecast Application Built with FLUTTER SDK
 
 ## ✨ Features
 - [x] Nice Color Palette
-- [x] Gradient
+- [x] Home Page
 - [x] Bottom Navigation 
 - [x] Smooth Animation 🎞
-- [x] Nice Icons (Flutter Icons) 👍
-- [x] Sliding Panel
-- [x] Lottie Animation
-- [x] Google Sign In
-- [x] Line Charts
-- [x] ......
+- [x] Animated Drawer 👍
+- [x] Custom Icon
+- [x] Login Page
+- [x] Splash Screen
+- [x] Cart Page 
+- [x] Profile Page
 
-## 📸 ScreenShots
+## 📸 Presentation
 
 <!-- <img src="ss/mockup.png"/> -->
 
