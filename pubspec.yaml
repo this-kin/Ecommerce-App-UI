@@ -1,31 +1,46 @@
 name: ecommerce
 description: A new Flutter project.
+
+
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
 version: 1.0.0+1
 environment:
   sdk: ">=2.7.0 <3.0.0"
+  
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.0
   flutter_screenutil:
+  flutter_phoenix: ^1.0.0
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 flutter:
   uses-material-design: true
+
+
   assets:
-    - assets/
+    - assets/images/
   #   - images/a_dot_ham.jpeg
+
+
   fonts:
   - family: Raleway
     fonts:
-    - asset: fonts/Raleway-ExtraBold.ttf
+    - asset: assets/fonts/Raleway-ExtraBold.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
+
+
   - family: Raleway thin
     fonts:
-    - asset: fonts/Raleway-VariableFont_wght.ttf
+    - asset: assets/fonts/Raleway-VariableFont_wght.ttf
+
+
   - family: CustomIcon
     fonts:
-    - asset: fonts/CustomIcon.ttf
+    - asset: assets/fonts/CustomIcon.ttf

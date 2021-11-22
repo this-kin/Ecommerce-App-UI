@@ -1,17 +1,39 @@
 import 'package:flutter/material.dart';
 
-Color backGroundColor2 = Color(0xffF2F2F2);
-Color iconColor2 = Color(0xffFA4A0C);
-Color containerColor = Color(0xffD3F2FF);
-Color idkWtf = Color(0xff58C0EA);
-Color borderColor = Color(0xffD6D9E0);
+class CustomTheme {
+  static ThemeData getTheme() {
+    if (true) {
+      return _themeData;
+      // ignore: dead_code
+    } else {
+      return _themeData;
+    }
+  }
 
-ThemeData themeData = ThemeData(
-    canvasColor: backGroundColor2,
-    backgroundColor: Color(0xff5956E9),
-    primaryColor: Color(0xffFFFFFF),
-    accentColor: Color(0xff868686),
-    iconTheme: IconThemeData(color: Colors.black)
+  // only light theme text only
 
-    //
-    );
+  static const TextTheme _textTheme = TextTheme();
+
+  //light theme only
+  static ThemeData _themeData = ThemeData(
+    scaffoldBackgroundColor: HexColor("F9F9F9"),
+    brightness: Brightness.dark,
+    visualDensity: VisualDensity.adaptivePlatformDensity,
+    platform: TargetPlatform.iOS,
+    primaryColor: HexColor("5956E9"),
+    backgroundColor: HexColor("F9F9F9"),
+    textTheme: _textTheme,
+  );
+}
+
+class HexColor extends Color {
+  static int _getColorFromHex(String hexColor) {
+    hexColor = hexColor.toUpperCase().replaceAll("#", "");
+    if (hexColor.length == 6) {
+      hexColor = "FF" + hexColor;
+    }
+    return int.parse(hexColor, radix: 16);
+  }
+
+  HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
+}
