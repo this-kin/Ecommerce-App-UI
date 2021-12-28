@@ -1,18 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/size_extension.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomTheme {
   static ThemeData getTheme() {
-    if (true) {
-      return _themeData;
-      // ignore: dead_code
-    } else {
-      return _themeData;
-    }
+    return _themeData;
   }
 
-  // only light theme text only
+  HexColor _primaryColor = HexColor("5956E9");
 
-  static const TextTheme _textTheme = TextTheme();
+  static TextTheme _textTheme = TextTheme(
+      headline1: GoogleFonts.raleway(
+          textStyle: TextStyle(
+        fontSize: 64.sp,
+        fontWeight: FontWeight.bold,
+        color: Colors.white,
+      )),
+      button: GoogleFonts.raleway(
+        fontSize: 20.sp,
+        fontWeight: FontWeight.w700,
+        color: HexColor("5956E9"),
+      ));
 
   //light theme only
   static ThemeData _themeData = ThemeData(
@@ -23,6 +31,10 @@ class CustomTheme {
     primaryColor: HexColor("5956E9"),
     backgroundColor: HexColor("F9F9F9"),
     textTheme: _textTheme,
+    pageTransitionsTheme: PageTransitionsTheme(builders: {
+      TargetPlatform.android: ZoomPageTransitionsBuilder(),
+      TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
+    }),
   );
 }
 
