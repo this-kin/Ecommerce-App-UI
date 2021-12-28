@@ -7,19 +7,30 @@ class CustomTheme {
     return _themeData;
   }
 
-  HexColor _primaryColor = HexColor("5956E9");
+  // HexColor _primaryColor = HexColor("5956E9");
 
   static TextTheme _textTheme = TextTheme(
       headline1: GoogleFonts.raleway(
-          textStyle: TextStyle(
-        fontSize: 64.sp,
-        fontWeight: FontWeight.bold,
-        color: Colors.white,
-      )),
+        textStyle: TextStyle(
+          fontSize: 64.sp,
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
+        ),
+      ),
       button: GoogleFonts.raleway(
         fontSize: 20.sp,
         fontWeight: FontWeight.w700,
         color: HexColor("5956E9"),
+      ),
+      caption: GoogleFonts.raleway(
+        fontSize: 18.sp,
+        fontWeight: FontWeight.w700,
+        color: Colors.black,
+      ),
+      bodyText1: GoogleFonts.raleway(
+        color: HexColor("#5956E9"),
+        fontSize: 15.sp,
+        fontWeight: FontWeight.w700,
       ));
 
   //light theme only

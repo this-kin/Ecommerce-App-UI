@@ -1,6 +1,6 @@
 import 'package:ecommerce/modules/auth/login.dart';
+import 'package:ecommerce/modules/home/home.dart';
 import 'package:ecommerce/modules/splash/splash.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
@@ -11,6 +11,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => Splash());
       case '/login':
         return MaterialPageRoute(builder: (_) => Login());
+      case '/home':
+        return MaterialPageRoute(builder: (_) => Home());
     }
     return args;
   }
