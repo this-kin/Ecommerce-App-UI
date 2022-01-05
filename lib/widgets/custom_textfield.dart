@@ -46,6 +46,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
           ),
           SizedBox(height: 10.h),
           TextFormField(
+            style: theme.textTheme.caption,
             controller: widget.controller,
             decoration: InputDecoration(
               hintText: widget.labelText,

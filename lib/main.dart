@@ -22,6 +22,8 @@ class MyApp extends StatelessWidget {
         statusBarIconBrightness: Brightness.dark,
         systemNavigationBarColor: Colors.transparent,
         systemNavigationBarDividerColor: Colors.transparent,
+        systemNavigationBarContrastEnforced: true,
+        systemNavigationBarIconBrightness: Brightness.light,
       ),
     );
     return ScreenUtilInit(

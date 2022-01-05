@@ -42,6 +42,7 @@ class CustomTheme {
     primaryColor: HexColor("5956E9"),
     backgroundColor: HexColor("F9F9F9"),
     textTheme: _textTheme,
+    accentColor: Colors.black,
     pageTransitionsTheme: PageTransitionsTheme(builders: {
       TargetPlatform.android: ZoomPageTransitionsBuilder(),
       TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
